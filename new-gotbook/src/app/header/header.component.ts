@@ -8,9 +8,13 @@ import { UserService } from '../user/user.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private userService: UserService) { }
+  constructor(private user: UserService) { }
 
   ngOnInit() {
+  }
+
+  getImage(userPicture: UserService) {
+    return userPicture.character.picture;
   }
 
 }

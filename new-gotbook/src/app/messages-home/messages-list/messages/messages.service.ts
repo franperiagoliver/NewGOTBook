@@ -9,7 +9,7 @@ export class MessagesService {
 
   private URLBase = 'http://localhost:3000/';
 
-  constructor(private http: Http, private userService: UserService) { }
+  constructor(private http: Http) { }
 
   getAllMessages(): Observable<Message[]> {
     return this.http.get(`${this.URLBase}/message`)

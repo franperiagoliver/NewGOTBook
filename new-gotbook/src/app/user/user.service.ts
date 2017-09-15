@@ -16,7 +16,7 @@ export class UserService {
       this.character.house = House.Targaryen;
       this.character.name = 'Daenerys';
       this.character.surname = 'Targaryen';
-      this.character.picture = 'danny.png';
+      this.character.picture = '../assets/characts/danny.png';
      }
 
 }
