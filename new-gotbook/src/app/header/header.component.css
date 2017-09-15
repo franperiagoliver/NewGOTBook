@@ -1,0 +1,63 @@
+.nav-tabs li a {
+    color: #777;
+}
+
+.navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #d5d5d5 !important;
+}
+
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.back-image {
+    background-image: url("../../assets/got2.jpg");
+    height: 300px;
+    background-repeat: none!important;
+    background-size: 100%;
+    background-position: center;
+}
+
+.avatar img {
+    border-radius: 50px;
+    width: 25%;
+    padding: 10px;
+}
+
+.avatar h1 {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+}
+
+.avatar {
+    margin-top: 30px;
+    margin-left: 230px;
+    margin-right: 230px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 60px;
+}

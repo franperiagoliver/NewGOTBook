@@ -1,0 +1,20 @@
+<div class="list-messages-container">
+    <h1>My crown's messages</h1>
+    <ul class="msg-charact">
+        <li *ngFor "let message for messagesCharacter">
+            <div class="avatar-msg-dates">
+                <p>{{character.name}} {{character.surname}}</p>
+                <p>{{message.date}}</p>
+                <p>{{character.house}}</p>
+            </div>
+            <div>
+                <img src="" alt="Character picture" />
+                <p>{{message.text}}</p>
+            </div>
+            <div>
+                <img src="" alt="Cool!" />
+                <img src="" alt="Pssst!" />
+                <img src="" alt="You must die!" />
+            </div>
+    </ul>
+</div>
