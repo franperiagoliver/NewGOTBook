@@ -1,13 +1,37 @@
 .list-partners-container {
     margin-top: 30px;
-    margin-left: 230px;
-    margin-right: 230px;
     padding-bottom: 20px;
     border-radius: 5px;
     background-color: white;
     margin-bottom: 10px;
 }
 
+.relation-container {
+    padding-left: 20px; 
+}
+
 h1 {
     padding: 10px;
+}
+
+.cart{
+    width: 97%;
+    margin: 0 auto;
+    margin-top: .5em;
+    margin-bottom: 2em;
+}
+
+.partner-img{
+    float: left;
+    width: 5em;
+    height: 5em;
+    border: 2px solid rgba(37, 35, 35, 0.82);
+    border-radius: 2px;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.partner-img img{
+    width: 100%;
+    height: 100%;
 }

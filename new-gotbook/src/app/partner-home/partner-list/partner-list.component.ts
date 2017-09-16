@@ -27,4 +27,12 @@ export class PartnerListComponent implements OnInit {
     });
   }
 
+  deleteRelation(relation: Relation) {
+    this.relationService.deleteRelation(relation).subscribe();
+  }
+
+  updateRelation(relation: Relation) {
+    this.relationService.updateRelation(relation).subscribe();
+  }
+
 }

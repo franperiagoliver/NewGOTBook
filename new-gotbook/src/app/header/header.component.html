@@ -17,6 +17,6 @@
 </div>
 <!-- Jumbotron -->
 <div class="avatar">
-    <h1>{{user.character.name}} {{user.character.surname}}</h1>
-    <img src="../assets/characts/danny.png" alt="Avatar Image" />
+    <h1>{{character?.name}} {{character?.surname}}</h1>
+    <img [src]="getCharacterPicture()" alt="Avatar Image" />
 </div>

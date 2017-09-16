@@ -1,10 +1,7 @@
 .list-messages-container {
     margin-top: 30px;
-    margin-left: 230px;
-    margin-right: 230px;
     border-radius: 5px;
     background-color: white;
-    margin-bottom: 10px;
 }
 
 .list-messages-container h1 {

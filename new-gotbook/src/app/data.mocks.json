@@ -5,77 +5,77 @@
       "name": "Daenerys",
       "surname": "Targaryen",
       "house": "Targaryen",
-      "picture": "../assets/characts/danny.png"
+      "picture": "danny.png"
     },
     {
       "id": 1,
       "name": "Jon",
       "surname": "Snow",
       "house": "Stark",
-      "picture": "../assets/characts/jon.png"
+      "picture": "jon.png"
     },
     {
       "id": 2,
       "name": "Sansa",
       "surname": "Stark",
       "house": "Stark",
-      "picture": "../assets/characts/sansa.jpg"
+      "picture": "sansa.jpg"
     },
     {
       "id": 3,
       "name": "Ramsay",
       "surname": "Bolton",
       "house": "Bolton",
-      "picture": "../assets/characts/ramsay.png"
+      "picture": "ramsay.png"
     },
     {
       "id": 4,
       "name": "Arya",
       "surname": "Stark",
       "house": "Stark",
-      "picture": "../assets/characts/arya.jpg"
+      "picture": "arya.jpg"
     },
     {
       "id": 5,
       "name": "Cercei",
       "surname": "Lannister",
       "house": "Lannister",
-      "picture": "../assets/characts/cercei.jpg"
+      "picture": "cercei.jpg"
     },
     {
       "id": 6,
       "name": "Jaime",
       "surname": "Lannister",
       "house": "Lannister",
-      "picture": "../assets/characts/jaime.jpg"
+      "picture": "jaime.jpg"
     },
     {
       "id": 7,
       "name": "Stannis",
       "surname": "Baratheon",
       "house": "Baratheon",
-      "picture": "../assets/characts/stannis.jpg"
+      "picture": "stannis.jpg"
     },
     {
       "id": 8,
       "name": "Robert",
       "surname": "Baratheon",
       "house": "Baratheon",
-      "picture": "../assets/characts/robert.jpg"
+      "picture": "robert.jpg"
     },
     {
       "id": 9,
       "name": "Theon",
       "surname": "Greyjoy",
       "house": "Greyjoy",
-      "picture": "../assets/characts/theon.jpg"
+      "picture": "theon.jpg"
     },
     {
       "id": 10,
       "name": "Roose",
       "surname": "Bolton",
       "house": "Bolton",
-      "picture": "../assets/characts/roose.jpg"
+      "picture": "roose.jpg"
     }
   ],
   "message": [
@@ -86,7 +86,7 @@
         "name": "Daenerys",
         "surname": "Targaryen",
         "house": "Targaryen",
-        "picture": "../assets/characts/danny.png"
+        "picture": "danny.png"
       },
       "text": "Labore praesentium tempora. Quas sed quia aperiam in. Quasi qui quod dolore laboriosam odit quisquam voluptate qui.",
       "date": "2017-07-09T15:21:21.831Z"
@@ -98,7 +98,7 @@
         "name": "Jon",
         "surname": "Snow",
         "house": "Stark",
-        "picture": "../assets/characts/jon.png"
+        "picture": "jon.png"
       },
       "text": "Labore praesentium tempora. Quas sed quia aperiam in. Quasi qui quod dolore laboriosam odit quisquam voluptate qui.",
       "date": "2017-07-09T15:21:21.831Z"
@@ -110,7 +110,7 @@
         "name": "Jaime",
         "surname": "Lannister",
         "house": "Lannister",
-        "picture": "../assets/characts/jaime.jpg"
+        "picture": "jaime.jpg"
       },
       "text": "Labore praesentium tempora. Quas sed quia aperiam in. Quasi qui quod dolore laboriosam odit quisquam voluptate qui.",
       "date": "2016-07-09T15:21:21.831Z"
@@ -122,7 +122,7 @@
         "name": "Roose",
         "surname": "Bolton",
         "house": "Bolton",
-        "picture": "../assets/characts/roose.jpg"
+        "picture": "roose.jpg"
       },
       "text": "Labore praesentium tempora. Quas sed quia aperiam in. Quasi qui quod dolore laboriosam odit quisquam voluptate qui.",
       "date": "2017-08-09T15:21:21.831Z"
@@ -134,7 +134,7 @@
         "name": "Arya",
         "surname": "Stark",
         "house": "Stark",
-        "picture": "../assets/characts/arya.jpg"
+        "picture": "arya.jpg"
       },
       "text": "Labore praesentium tempora. Quas sed quia aperiam in. Quasi qui quod dolore laboriosam odit quisquam voluptate qui.",
       "date": "2017-11-09T15:21:21.831Z"
@@ -146,7 +146,7 @@
         "name": "Cercei",
         "surname": "Lannister",
         "house": "Lannister",
-        "picture": "../assets/characts/cercei.jpg"
+        "picture": "cercei.jpg"
       },
       "text": "Labore praesentium tempora. Quas sed quia aperiam in. Quasi qui quod dolore laboriosam odit quisquam voluptate qui.",
       "date": "2017-07-12T15:21:21.831Z"
@@ -158,7 +158,7 @@
         "name": "Roose",
         "surname": "Bolton",
         "house": "Bolton",
-        "picture": "../assets/characts/roose.jpg"
+        "picture": "roose.jpg"
       },
       "text": "Labore praesentium tempora. Quas sed quia aperiam in. Quasi qui quod dolore laboriosam odit quisquam voluptate qui.",
       "date": "2017-07-13T15:21:21.831Z"
@@ -170,7 +170,7 @@
         "name": "Daenerys",
         "surname": "Targaryen",
         "house": "Targaryen",
-        "picture": "../assets/characts/danny.png"
+        "picture": "danny.png"
       },
       "text": "Labore praesentium tempora. Quas sed quia aperiam in. Quasi qui quod dolore laboriosam odit quisquam voluptate qui.",
       "date": "2017-05-09T15:21:21.831Z"
@@ -182,7 +182,7 @@
         "name": "Roose",
         "surname": "Bolton",
         "house": "Bolton",
-        "picture": "../assets/characts/roose.jpg"
+        "picture": "roose.jpg"
       },
       "text": "Labore praesentium tempora. Quas sed quia aperiam in. Quasi qui quod dolore laboriosam odit quisquam voluptate qui.",
       "date": "2016-07-09T15:21:21.831Z"
@@ -194,7 +194,7 @@
         "name": "Theon",
         "surname": "Greyjoy",
         "house": "Greyjoy",
-        "picture": "../assets/characts/theon.jpg"
+        "picture": "theon.jpg"
       },
       "text": "Labore praesentium tempora. Quas sed quia aperiam in. Quasi qui quod dolore laboriosam odit quisquam voluptate qui.",
       "date": "2017-07-09T15:21:21.831Z"
@@ -206,23 +206,11 @@
         "name": "Jon",
         "surname": "Snow",
         "house": "Stark",
-        "picture": "../assets/characts/jon.png"
+        "picture": "jon.png"
       },
       "text": "Labore praesentium tempora. Quas sed quia aperiam in. Quasi qui quod dolore laboriosam odit quisquam voluptate qui.",
       "date": "2017-07-09T15:21:21.831Z"
-    },
-    {
-      "character": {
-        "id": 0,
-        "name": "Daenerys",
-        "surname": "Targaryen",
-        "house": "Targaryen",
-        "picture": "../assets/characts/danny.png"
-      },
-      "date": "2017-09-16T11:52:04.770Z",
-      "id": 11
-    }
-  ],
+    }],
   "relation": [
     {
       "requester": {
@@ -230,14 +218,31 @@
         "name": "Daenerys",
         "surname": "Targaryen",
         "house": "Targaryen",
-        "picture": "../assets/characts/danny.png"
+        "picture": "danny.png"
       },
       "requested": {
         "id": 5,
         "name": "Cercei",
         "surname": "Lannister",
         "house": "Lannister",
-        "picture": "../assets/characts/cercei.jpg"
+        "picture": "cercei.jpg"
+      },
+      "accepted": true
+    },
+    {
+      "requester": {
+        "id": 0,
+        "name": "Daenerys",
+        "surname": "Targaryen",
+        "house": "Targaryen",
+        "picture": "danny.png"
+      },
+      "requested": {
+        "id": 1,
+        "name": "Jon",
+        "surname": "Snow",
+        "house": "Stark",
+        "picture": "jon.png"
       },
       "accepted": false
     },
@@ -247,14 +252,14 @@
         "name": "Jon",
         "surname": "Snow",
         "house": "Stark",
-        "picture": "../assets/characts/jon.png"
+        "picture": "jon.png"
       },
       "requested": {
         "id": 9,
         "name": "Theon",
         "surname": "Greyjoy",
         "house": "Greyjoy",
-        "picture": "../assets/characts/theon.jpg"
+        "picture": "theon.jpg"
       },
       "accepted": true
     },
@@ -264,14 +269,14 @@
         "name": "Arya",
         "surname": "Stark",
         "house": "Stark",
-        "picture": "../assets/characts/arya.jpg"
+        "picture": "arya.jpg"
       },
       "requested": {
         "id": 0,
         "name": "Daenerys",
         "surname": "Targaryen",
         "house": "Targaryen",
-        "picture": "../assets/characts/danny.png"
+        "picture": "danny.png"
       },
       "accepted": true
     },
@@ -281,14 +286,14 @@
         "name": "Stannis",
         "surname": "Baratheon",
         "house": "Baratheon",
-        "picture": "../assets/characts/stannis.jpg"
+        "picture": "stannis.jpg"
       },
       "requested": {
         "id": 2,
         "name": "Sansa",
         "surname": "Stark",
         "house": "Stark",
-        "picture": "../assets/characts/sansa.jpg"
+        "picture": "sansa.jpg"
       },
       "accepted": false
     },
@@ -298,14 +303,14 @@
         "name": "Sansa",
         "surname": "Stark",
         "house": "Stark",
-        "picture": "../assets/characts/sansa.jpg"
+        "picture": "sansa.jpg"
       },
       "requested": {
         "id": 6,
         "name": "Jaime",
         "surname": "Lannister",
         "house": "Lannister",
-        "picture": "../assets/characts/jaime.jpg"
+        "picture": "jaime.jpg"
       },
       "accepted": true
     },
@@ -315,14 +320,14 @@
         "name": "Cercei",
         "surname": "Lannister",
         "house": "Lannister",
-        "picture": "../assets/characts/cercei.jpg"
+        "picture": "cercei.jpg"
       },
       "requested": {
         "id": 7,
         "name": "Stannis",
         "surname": "Baratheon",
         "house": "Baratheon",
-        "picture": "../assets/characts/stannis.jpg"
+        "picture": "stannis.jpg"
       },
       "accepted": false
     }
@@ -336,7 +341,7 @@
           "name": "Daenerys",
           "surname": "Targaryen",
           "house": "Targaryen",
-          "picture": "../assets/characts/danny.png"
+          "picture": "danny.png"
         },
         "text": "Labore praesentium tempora. Quas sed quia aperiam in. Quasi qui quod dolore laboriosam odit quisquam voluptate qui.",
         "date": "2017-05-09T15:21:21.831Z"
@@ -346,7 +351,7 @@
         "name": "Cercei",
         "surname": "Lannister",
         "house": "Lannister",
-        "picture": "../assets/characts/cercei.jpg"
+        "picture": "cercei.jpg"
       },
       "opinion": "COOL"
     }

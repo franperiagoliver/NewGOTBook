@@ -21,6 +21,7 @@ import { UserService } from './user/user.service';
 import { MessagesService } from './messages-home/messages-list/messages/messages.service';
 import { RelationService } from './partner-home/partner-list/relation.service';
 import { StatesService } from './messages-home/messages-list/messages/states/states.service';
+import { SearchPartnerComponent } from './partner-home/partner-list/search-partner/search-partner.component';
 
 const appRoutes: Routes = [
   {path: 'messages', component: MessagesHomeComponent, pathMatch: 'full'},
@@ -45,7 +46,8 @@ const appRoutes: Routes = [
     DatesCharacterComponent,
     StatesComponent,
     SearchPartnerPipe,
-    DatesCharacterHomeComponent
+    DatesCharacterHomeComponent,
+    SearchPartnerComponent
   ],
   imports: [
     BrowserModule,

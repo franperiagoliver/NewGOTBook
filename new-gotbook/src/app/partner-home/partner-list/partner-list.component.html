@@ -1,17 +1,17 @@
 <div class="list-partners-container">
   <h1 class="title-list-partners">My partners</h1>
-  <div *ngFor="let relation of relations" class="relation-container">
+  <div *ngFor="let relation of relations | searchPartner:'name':search" class="relation-container">
     <div class="cart">
       <div class="partner-img">
-        <img [src]="getPartnerPicture()" alt="Character picture" />
+        <img src="getPartnerPicture()" alt="Character picture" />
       </div>
       <div class="partner-list">
-        <p>{{relation.requested.name}}</p>
+        <p>{{relation?.requested.name}} {{relation?.requested.surname}}</p>
         <div *ngIf="relation.accepted">
-
+          <button (click)="deleteRelation()" class="btn btn-primary btn-md">I want to kill you!</button>
         </div>
         <div *ngIf="!relation.accepted">
-
+          <button (click)="acceptRelation()" class="btn btn-primary btn-md">I want to be your partner!</button>
         </div>
       </div>
     </div>
