@@ -1,3 +1,19 @@
 <div class="list-partners-container">
-    <h1 class="title-list-partners">My partners</h1>
+  <h1 class="title-list-partners">My partners</h1>
+  <div *ngFor="let relation of relations" class="relation-container">
+    <div class="cart">
+      <div class="partner-img">
+        <img [src]="getPartnerPicture()" alt="Character picture" />
+      </div>
+      <div class="partner-list">
+        <p>{{relation.requested.name}}</p>
+        <div *ngIf="relation.accepted">
+
+        </div>
+        <div *ngIf="!relation.accepted">
+
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
