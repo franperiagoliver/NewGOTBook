@@ -4,9 +4,65 @@
     margin-right: 230px;
     border-radius: 5px;
     background-color: white;
+    margin-bottom: 10px;
 }
 
 .list-messages-container h1 {
     padding-top: 15px;
     padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.messages-container {
+    width: 97%;
+    border: 3px solid grey;
+    margin: 0 auto;
+    margin-top: 1em;
+    overflow: hidden;
+}
+
+header{
+    width: 97%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.name-charact {
+    float: left;
+}
+
+.date-msg {
+    float: right;
+}
+
+.cart{
+    width: 97%;
+    margin: 0 auto;
+    margin-top: .5em;
+    margin-bottom: 2em;
+}
+
+.avatar-img{
+    float: left;
+    width: 5em;
+    height: 4em;
+    border: 2px solid rgba(37, 35, 35, 0.82);
+    border-radius: 2px;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.avatar-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.avatar-msg{
+    font-size: .8em;
+}
+
+footer img {
+    float: right;
+    padding-right: 5px;
+    cursor: pointer;
 }

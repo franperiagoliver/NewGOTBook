@@ -1,0 +1,12 @@
+.list-partners-container {
+    margin-top: 30px;
+    margin-left: 230px;
+    margin-right: 230px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+h1 {
+    padding: 10px;
+}

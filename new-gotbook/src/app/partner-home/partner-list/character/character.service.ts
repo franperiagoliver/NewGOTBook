@@ -6,12 +6,12 @@ import { Character } from './character.model';
 @Injectable()
 export class CharacterService {
 
-private URLBase = 'http://localhost:3000/';
+private URLBase = 'http://localhost:3000';
 
   constructor(private http: Http) { }
 
-  getCharacter(character: Character): Observable<Character[]> {
-    return this.http.get(`${this.URLBase}/character/${character['id']}`)
+  getCharacter(): Observable<Character> {
+    return this.http.get(`${this.URLBase}/character/0`)
         .map((res: Response) => res.json())
         .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
 

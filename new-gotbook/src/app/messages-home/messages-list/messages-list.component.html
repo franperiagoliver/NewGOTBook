@@ -1,20 +1,22 @@
 <div class="list-messages-container">
     <h1>My crown's messages</h1>
-    <ul class="msg-charact">
-        <li *ngFor "let message for messagesCharacter">
-            <div class="avatar-msg-dates">
-                <p>{{character.name}} {{character.surname}}</p>
-                <p>{{message.date}}</p>
-                <p>{{character.house}}</p>
+    <div *ngFor="let message of messages" class="messages-container" >
+        <header>
+            <span class="name-charact">{{message.character.name}} {{message.character.surname}}</span>
+            <span class="date-msg">{{message.date | date: 'dd/MM/yyyy'}}</span>
+        </header>
+        <div class="cart">
+            <div class="avatar-img">
+                <img src="../../../assets/characts/danny.png" alt="Character picture" />
             </div>
-            <div>
-                <img src="" alt="Character picture" />
+            <div class="avatar-msg">
                 <p>{{message.text}}</p>
             </div>
-            <div>
-                <img src="" alt="Cool!" />
-                <img src="" alt="Pssst!" />
-                <img src="" alt="You must die!" />
-            </div>
-    </ul>
+        </div>
+        <footer>
+            <img (click)="setDieState(message)" class="die" src="../../../assets/states/die.png" alt="You must die!" />
+            <img (click)="setPsstState(message)" class="psst" src="../../../assets/states/psst.png" alt="Pssst!" />
+            <img (click)="setCoolState(message)" class="cool" src="../../../assets/states/cool.png" alt="Cool!" />
+        </footer>
+    </div>
 </div>

@@ -1,10 +1,14 @@
 <div class="messages-container">
     <div class="container2">
-        <h1>What's news?</h1>
-        <textarea class="form-control noresize" placeholder="Tell me about your story..."></textarea>
-        <div class=row>
-            <div class=col-md-9></div>
-            <div class=col-md-3> <button type="button" class="btn btn-primary btn-md">Send!</button></div>
-        </div>
+        <h1 class="title-msg">What's news?</h1>
+        <form (submit)="sentMessage()" [formGroup]="formMessage">
+            <textarea name="msg" id="msg" class="form-control noresize" formControlName="message" placeholder="Tell me about your story..."></textarea>
+            <div class=row>
+                <div class=col-md-9></div>
+                <div class=col-md-3> 
+                    <input type="submit" [disabled]="!formMessage.valid" class="btn btn-primary btn-md" value="Sent!"/>
+                </div>
+            </div>
+        </form>
     </div>
 </div>

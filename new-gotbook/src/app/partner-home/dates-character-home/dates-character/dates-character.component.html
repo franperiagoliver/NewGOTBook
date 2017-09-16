@@ -1,3 +1,11 @@
-<p>
-  dates-character works!
-</p>
+<div class="dates-container">
+        <h1 class="title-dates">My personal dates</h1>
+        <div class="dates-character">
+          <h3>Name</h3>
+          <input type="text" [(ngModel)]="character.name" (blur)="updateDates(character)">
+          <h3>Surname</h3>
+          <input type="text" [(ngModel)]="character.surname" (blur)="updateDates(character)">
+          <h3>House</h3>
+          <input type="text" [(ngModel)]="character.house" (blur)="updateDates(character)">
+        </div>
+</div>

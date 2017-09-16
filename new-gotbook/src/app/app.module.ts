@@ -20,6 +20,7 @@ import { CharacterService } from './partner-home/partner-list/character/characte
 import { UserService } from './user/user.service';
 import { MessagesService } from './messages-home/messages-list/messages/messages.service';
 import { RelationService } from './partner-home/partner-list/relation.service';
+import { StatesService } from './messages-home/messages-list/messages/states/states.service';
 
 const appRoutes: Routes = [
   {path: 'messages', component: MessagesHomeComponent, pathMatch: 'full'},
@@ -57,7 +58,11 @@ const appRoutes: Routes = [
     CharacterService,
     UserService,
     MessagesService,
-    RelationService
+    RelationService,
+    HttpModule,
+    FormsModule,
+    ReactiveFormsModule,
+    StatesService
   ],
   bootstrap: [AppComponent]
 })
