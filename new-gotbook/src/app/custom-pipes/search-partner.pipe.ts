@@ -7,17 +7,17 @@ import { Relation } from '../partner-home/partner-list/relation.model';
 })
 export class SearchPartnerPipe implements PipeTransform {
 
-  transform(partners: Relation[], attribute: string, search: any): Relation[] {
+  transform(characters: Character[], attribute: string, search: any): Character[] {
     if (search && search.trim().length > 0) {
-      return partners.filter(
-        partner => {
-          if (partner[attribute].toUpperCase().indexOf(search.toUpperCase()) !== -1) {
-            return partner[attribute];
+      return characters.filter(
+        character => {
+          if (character[attribute].toUpperCase().indexOf(search.toUpperCase()) !== -1) {
+            return character[attribute];
           }
         }
       );
     } else {
-      return partners;
+      return characters;
     }
   }
 

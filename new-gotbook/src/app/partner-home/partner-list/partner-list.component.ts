@@ -13,6 +13,7 @@ export class PartnerListComponent implements OnInit {
 
   relations: Relation[];
   character: Character;
+  characters: Character[];
 
   constructor(private relationService: RelationService, private characterService: CharacterService) { }
 
@@ -31,7 +32,12 @@ export class PartnerListComponent implements OnInit {
     this.relationService.deleteRelation(relation).subscribe();
   }
 
-  updateRelation(relation: Relation) {
+  acceptRelation(relation: Relation) {
+    if (relation.accepted) {
+      relation.accepted = false;
+    } else {
+      relation.accepted = true;
+    }
     this.relationService.updateRelation(relation).subscribe();
   }
 
