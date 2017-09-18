@@ -19,7 +19,11 @@ export class HeaderComponent implements OnInit {
   }
 
   getCharacterPicture() {
-    return '../../../assets/characts/' + this.character.picture;
+    if ( this.character ) {
+      return '../../../assets/characts/' + this.character.picture;
+    } else {
+      return '../../../assets/characts/arya.jpg';
+    }
   }
 
 }

@@ -18,9 +18,8 @@ export class DatesCharacterComponent implements OnInit {
     this.characterService.getCharacter().subscribe(character => this.character = character);
   }
 
-  updateDates(character: Character) {
-    this.character = character;
-    this.characterService.updateCharacter(character).subscribe();
+  updateDates() {
+    this.characterService.updateCharacter(this.character).subscribe();
   }
 
 }

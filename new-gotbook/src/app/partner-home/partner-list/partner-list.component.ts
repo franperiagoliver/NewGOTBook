@@ -22,10 +22,12 @@ export class PartnerListComponent implements OnInit {
     this.relationService.getRelation().subscribe(relations => this.relations = relations);
   }
 
-  getPartnerPicture() {
-    this.relations.forEach(relation => {
-      return '../../../assets/characts/' + relation.requested.picture;
-    });
+  getPartnerPicture(character: Character) {
+    if (character) {
+        return '../../../assets/characts/' + character.picture;
+    } else {
+        return '../../../assets/characts/danny.png';
+    }
   }
 
   deleteRelation(relation: Relation) {

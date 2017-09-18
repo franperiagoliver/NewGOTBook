@@ -1,9 +1,9 @@
 <div class="list-messages-container">
     <h1>My crown's messages</h1>
-    <div *ngFor="let message of messages" class="messages-container" >
+    <div *ngFor="let message of messages" class="messages-container">
         <header>
-            <span class="name-charact">{{message.character.name}} {{message.character.surname}}</span>
-            <span class="date-msg">{{message.date | date: 'dd/MM/yyyy'}}</span>
+            <span class="name-charact">{{message?.character?.name}} {{message?.character?.surname}}</span>
+            <span class="date-msg">{{message?.date | date: 'dd/MM/yyyy'}}</span>
         </header>
         <div class="cart">
             <div class="avatar-img">

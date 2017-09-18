@@ -1,0 +1,19 @@
+<div class="list-partners-container">
+    <h1 class="title-list-partners">My partners</h1>
+    <div *ngFor="let character of characters" class=" relation-container " [class.selected]="character.selected " (click)="selectPerson(character) ">
+        <div class="cart ">
+            <div class="partner-img ">
+                <img [src]="getPartnerPicture(relation.requested) " alt="Character picture " />
+            </div>
+            <div class="partner-list ">
+                <p>{{relation?.requested.name}} {{relation?.requested.surname}}</p>
+                <div *ngIf="isFriend(character) ">
+                    <button (click)="deleteRelation() " class="btn btn-primary btn-md ">I want to kill you!</button>
+                </div>
+                <div *ngIf="!isFriend(character) ">
+                    <button (click)="acceptRelation() " class="btn btn-primary btn-md ">I want to be your partner!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

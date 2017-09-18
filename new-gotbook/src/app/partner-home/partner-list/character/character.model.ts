@@ -6,4 +6,5 @@ export class Character {
     surname: string;
     house: House;
     picture: string;
+    selected: boolean;
 }

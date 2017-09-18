@@ -17,10 +17,17 @@ private URLBase = 'http://localhost:3000';
 
   }
 
-  updateCharacter(character: Character): Observable<Character[]> {
+  getCharacters(): Observable<Character[]> {
+    return this.http.get(`${this.URLBase}/character/0`)
+        .map((res: Response) => res.json())
+        .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
+
+  }
+
+  updateCharacter(character: Character): Observable<Character> {
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
-    return this.http.post(`${this.URLBase}/character/${character['id']}`, character , options)
+    return this.http.put(`${this.URLBase}/character/${character['id']}`, character , options)
                     .map((res: Response) => res.json())
                     .catch((error: any) => Observable.throw(error.json().error) || 'Server error');
   }

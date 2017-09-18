@@ -25,7 +25,9 @@ export class MessageComponent implements OnInit {
       }
 
   ngOnInit() {
-    this.messagesService.getMessageByCharacter().subscribe(messages => this.messages = messages);
+    this.messagesService.myStream$.subscribe( changed => 
+      this.messagesService.getMessageByCharacter().subscribe(messages => this.messages = messages)
+    );
     this.characterService.getCharacter().subscribe(character => this.character = character);
   }
 
@@ -33,7 +35,7 @@ export class MessageComponent implements OnInit {
     let message: Message = new Message();
     message.character = this.character;
     message.date = new Date();
-    message.text = this.formMessage.value.msg;
+    message.text = this.formMessage.value.message;
     this.messagesService.publishMessage(message).subscribe(msgs => this.messages = msgs);
   }
 

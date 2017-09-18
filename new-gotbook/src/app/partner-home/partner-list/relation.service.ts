@@ -16,6 +16,18 @@ export class RelationService {
 
   }
 
+  getRequester(): Observable<Relation[]> {
+    return this.http.get(`${this.URLBase}?requester.id=1`)
+    .map( (res: Response) => res.json() )
+    .catch( (error: any) => Observable.throw(error.json().error || 'Server error') );
+  }
+
+  getRequested(): Observable<Relation[]> {
+    return this.http.get(`${this.URLBase}?requested.id=1`)
+    .map( (res: Response) => res.json() )
+    .catch( (error: any) => Observable.throw(error.json().error || 'Server error') );
+  }
+
   updateRelation(relation: Relation): Observable<Relation[]> {
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });

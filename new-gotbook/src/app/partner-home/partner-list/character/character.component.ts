@@ -21,8 +21,13 @@ export class CharacterComponent implements OnInit {
     this.relationService.getRelation().subscribe(relation => this.relations = relation);
   }
 
-  getCharacterPicture(relation: Relation) {
-    return '../../../assets/characts/jon.png' + relation.requested.picture;
+  getCharacterPicture(character: Character) {
+    if (character) {
+      return '../../../assets/characts/' + character.picture;
+    } else {
+      return '../../../assets/characts/danny.png';
+    }
+
   }
 
   acceptRelation(relation: Relation) {

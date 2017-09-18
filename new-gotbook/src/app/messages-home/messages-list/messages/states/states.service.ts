@@ -20,7 +20,15 @@ export class StatesService {
   updateState(state: State): Observable<State[]> {
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
-    return this.http.put(`${this.URLBase}/state/`, state, options)
+    return this.http.put(`${this.URLBase}/state/${state['id']}`, state, options)
+      .map((res: Response) => res.json())
+      .catch((error: any) => Observable.throw(error.json().error) || 'Server error');
+  }
+
+  postState(state: State): Observable<State[]> {
+    let headers = new Headers({ 'Content-Type': 'application/json' });
+    let options = new RequestOptions({ headers: headers });
+    return this.http.post(`${this.URLBase}/state/`, state, options)
       .map((res: Response) => res.json())
       .catch((error: any) => Observable.throw(error.json().error) || 'Server error');
   }

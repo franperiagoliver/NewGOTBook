@@ -1,19 +1,19 @@
 <div *ngFor="let relation of relations" class="charact-info-container">
-  <h1>Character information</h1>
-  <div class="charact-info-subcontainer">
-    <h4>{{relation?.requested.name}} {{relation?.requested.surname}}</h4>
-    <div class="cart-charact">
-      <div class="charact-img">
-        <img src="getCharacterPicture(relation)" alt="Character picture" />
-      </div>
-      <div *ngIf="relation.accepted" class="partner-dates">
-        <p>Name: {{relation?.requested.name}}</p>
-        <p>Surame: {{relation?.requested.surname}}</p>
-        <p>House: {{relation?.requested.house}}</p>
-      </div>
-      <div *ngIf="!relation.accepted" class="no-partner-dates">
-        <button (click)="acceptRelation()" class="btn btn-primary btn-md">I want to be your partner!</button>
-      </div>
+    <h1>Character information</h1>
+    <div class="charact-info-subcontainer">
+        <h4>{{relation?.requested.name}} {{relation?.requested.surname}}</h4>
+        <div class="cart-charact">
+            <div class="charact-img">
+                <img [src]="getCharacterPicture(relation.requested)" alt="Character picture" />
+            </div>
+            <div *ngIf="relation.accepted" class="partner-dates">
+                <p>Name: {{relation?.requested.name}}</p>
+                <p>Surame: {{relation?.requested.surname}}</p>
+                <p>House: {{relation?.requested.house}}</p>
+            </div>
+            <div *ngIf="!relation.accepted" class="no-partner-dates">
+                <button (click)="acceptRelation()" class="btn btn-primary btn-md">I want to be your partner!</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
