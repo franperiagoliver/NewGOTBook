@@ -292,6 +292,19 @@
       "date": "2017-09-18T17:42:02.700Z",
       "text": "Hola guapis\n",
       "id": 14
+    },
+    {
+      "character": {
+        "id": 0,
+        "name": "Daenerys ",
+        "surname": "Targaryen",
+        "house": "Targaryen",
+        "picture": "danny.png",
+        "selected": false
+      },
+      "date": "2017-09-18T17:42:53.716Z",
+      "text": "Adiós con el corazón",
+      "id": 15
     }
   ],
   "relation": [

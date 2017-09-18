@@ -25,7 +25,7 @@ export class MessageComponent implements OnInit {
       }
 
   ngOnInit() {
-    this.messagesService.myStream$.subscribe( changed => 
+    this.messagesService.myStream$.subscribe( changed =>
       this.messagesService.getMessageByCharacter().subscribe(messages => this.messages = messages)
     );
     this.characterService.getCharacter().subscribe(character => this.character = character);
