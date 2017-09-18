@@ -29,7 +29,7 @@ export class PartnerListComponent implements OnInit {
   }
 
   deleteRelation(relation: Relation) {
-    this.relationService.deleteRelation(relation).subscribe();
+    this.relationService.deleteRelation(relation).subscribe(relations => this.relations = relations);
   }
 
   acceptRelation(relation: Relation) {
@@ -38,7 +38,7 @@ export class PartnerListComponent implements OnInit {
     } else {
       relation.accepted = true;
     }
-    this.relationService.updateRelation(relation).subscribe();
+    this.relationService.updateRelation(relation).subscribe(relations => this.relations = relations);
   }
 
 }
